@@ -9,7 +9,7 @@ def find_even_values(src)
     element_index = 0
     while element_index < src[row_index].count do
       test = src[row_index][element_index]
-      test%2 == 0 ? evens << test : test = nil
+      evens << test if test%2 == 0
       element_index += 1
     end
     row_index += 1
